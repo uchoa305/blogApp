@@ -7,11 +7,16 @@
     
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Xuxu Blz?</title>
+    <title>Xuxu Blz?</title>
 </head>
 <body>
     {{>_navbar}}
     <div class="container mt-4">
+        {{#if error}}
+            <div class="alert  alert-danger"> {{error}}</div>
+        {{else}}
+        {{/if}}
+        {{>_msg}}
         {{{body}}}
     </div>
 </body>

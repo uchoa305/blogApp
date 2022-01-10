@@ -1,1 +1,13 @@
-<button class="btn btn-success">funfando?</button>
+{{#if user}}
+   
+        <h2> Bem vindo 
+             {{user.nome}}
+        </h2>
+        <p> aproveite a jornada</p>
+         <div class="btn-group-vertical">
+             <a class="btn btn-info" href="/admin/categorias">Categorias</a>
+             <a class="btn btn-info" href="/admin/postagens">Postagens</a>
+             <a class="btn btn-info" href="#">ADMS</a>
+        </div>
+{{else}}
+{{/if}}

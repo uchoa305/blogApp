@@ -1,0 +1,10 @@
+<h4>Categorias:</h4>
+<hr>
+{{#each categorias}}
+    <a href="/categorias/{{slug}}">
+        <h6>{{nome}}</h6>
+    </a>
+{{else}}
+    <h4 class="mt-3"> Nenhuma postagem registrada</h4>
+    <img src="/img/sem_resultados.jpg" class="img-thumbnail" width="400px" height="300px" alt="Sem resultados">
+{{/each}}
